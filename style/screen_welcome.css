@@ -1,0 +1,9 @@
+.welcome h2 {
+    text-align: left;
+    margin: 40px 20px 20px 20px;
+}
+
+.welcome p {
+    text-align: left;
+    margin: 20px 20px 40px 20px;
+}

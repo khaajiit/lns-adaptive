@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+.footer {
+    width: 100%;
+    background-color: black;
+    color: white;
+    
+}
+
+.footer__info {
+    padding: 20px;
+}
+
+.footer__info h3 {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.footer__info p {
+    margin: 0 0;
+}
+
+.footer__instagram {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+}
+
+.footer__instagram h3 {
+    text-align: center;
+    padding: 0 0 20px 0;
+    margin: 0 0;
+}
+
+.insta_photos {
+    margin-bottom: 40px;
+}
+
+.insta_photos img{
+    width: 75px;
+    height: 75px;
+}

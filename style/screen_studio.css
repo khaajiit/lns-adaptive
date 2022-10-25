@@ -1,0 +1,6 @@
+.studio__image img {
+    width: 100%;
+    /* object-fit: none; */
+    object-fit: contain;
+    transform: scale(1);
+}
