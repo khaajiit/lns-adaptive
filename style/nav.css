@@ -19,6 +19,7 @@ body {
     position: absolute;
     left: 1%;
     opacity: 1;
+    margin-left: 5%;
 }
 
 .nav ul {
@@ -45,12 +46,18 @@ body {
     color:aqua;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 499px) {
     .nav ul li:nth-child(1) {
         display: none;
     }
 
     .nav h1 {
         display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .nav h1 {
+        margin-left: 0;
     }
 }

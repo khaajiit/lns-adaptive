@@ -1,9 +1,27 @@
 .welcome h2 {
     text-align: left;
     margin: 40px 20px 20px 20px;
+    min-width: 280px;
 }
 
 .welcome p {
     text-align: left;
     margin: 20px 20px 40px 20px;
+}
+
+@media (min-width: 768px) {
+    .welcome {
+        display: flex;
+        align-items: center;
+    }
+
+    .welcome h2 {
+        margin: 80px 0 80px 80px;
+    }
+
+    .welcome p {
+        margin: 80px 80px 80px 0;
+        min-width: 335px;
+        max-width: 450px;
+    }
 }

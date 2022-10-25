@@ -50,7 +50,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
     .resp-tab td {
         margin: 0 -1px -1px 0;
@@ -62,8 +62,15 @@
         display: block;
     }
 }
+
 @media(max-width: 480px) {
     .resp-tab td {
         width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .services {
+        margin: 40px;
     }
 }
