@@ -49,6 +49,7 @@
 .insta_photos img{
     width: 75px;
     height: 75px;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
