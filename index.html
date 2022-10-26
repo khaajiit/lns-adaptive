@@ -19,16 +19,16 @@
     <div class="header">
         <div class="nav">
             <div class="logo">LNS</div>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Services</li>
-                <li>Contacts</li>
-            </ul>
+            <div class="menu">
+                <a href="#home" class="menu-color">Home</a>
+                <a href="#two" class="menu-color">About</a>
+                <a href="#three" class="menu-color">Services</a>
+                <a href="#four" class="menu-color">Contacts</a>
+            </div>
         </div>
     </div>
 
-    <div class="slider" data-slider="itc-slider">
+    <div class="slider screen" data-slider="itc-slider" id="home">
         <div class="slider__wrapper">
             <div class="slider__items">
                 <div class="slider__item">
@@ -49,7 +49,7 @@
         <button class="slider__control" data-slide="next"></button>
     </div>
 
-    <div class="welcome">
+    <div class="welcome screen" id="two">
         <h2>WELCOME TO LINA NAIL STUDIO</h2>
         <p>Здесь ты найдёшь свое вдохновение и получишь максимальное удовольствие 
             от процедуры.
@@ -57,13 +57,13 @@
             про ухоженные руки, но ещё и про уверенность в себе и любовь</p>
     </div>
 
-    <div class="studio">
+    <div class="studio screen">
         <div class="studio__image">
             <img src="images/studio/IMG20220622185114.png" alt="Our studio">
         </div>
     </div>
 
-    <div class="services">
+    <div class="services screen" id="three">
         <h2>ПРАЙС-ЛИСТ</h2>
         <div class="container__services">
             <table class="resp-tab">
@@ -107,7 +107,7 @@
         </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="four">
         <div class="footer__info">
             <h3>CONTACT INFO</h3>
             <p>Вы можете написать в Telegram или instagram в direct для записи и уточнения времени</p>
@@ -130,5 +130,27 @@
             </div>
         </div>
     </div>
+    <script>
+        window.addEventListener('scroll', () => {
+        const elems = document.querySelectorAll('.screen')
+    
+        elems.forEach(e => {
+            //const link = document.querySelector('a[href*="welcome"]')
+            const elemTop = e.offsetTop
+            const elemHeight = e.offsetHeight
+            const elemId = e.id
+            //const elemClass = e.className
+            // console.log(elemId)
+            console.log(pageYOffset);
+            console.log(window.pageYOffset,elemTop,elemTop + elemHeight,elemId)
+    
+            if (window.pageYOffset >= elemTop && window.pageYOffset <= elemTop + elemHeight) {
+                document.querySelector(`a[href*="${elemId}"]`).classList.add("actived");
+            } else {
+                document.querySelector(`a[href*="${elemId}"]`).classList.remove("actived");
+            }
+        });
+        })
+    </script>
 </body>
 </html>
