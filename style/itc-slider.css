@@ -135,3 +135,9 @@
 .slider__indicators li.active {
   background-color: rgb(255 255 255 / 90%);
 }
+
+@media (min-width: 500px) {
+  .slider {
+    margin-top: 52px;
+  }
+}
