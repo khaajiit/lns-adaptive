@@ -57,6 +57,14 @@
             про ухоженные руки, но ещё и про уверенность в себе и любовь</p>
     </div>
 
+    <div class="booking">
+        <div class="booking__button">
+            <a href="https://www.instagram.com/direct/t/340282366841710300949128181286419762973">
+                <h2>Записаться</h2>
+            </a>
+        </div>
+    </div>
+
     <div class="studio">
         <div class="studio__image">
             <img src="images/studio/IMG20220622185114.png" alt="Our studio">
@@ -126,27 +134,5 @@
             </div>
         </div>
     </div>
-    <script>
-        window.addEventListener('scroll', () => {
-        const elems = document.querySelectorAll('.screen')
-    
-        elems.forEach(e => {
-            //const link = document.querySelector('a[href*="welcome"]')
-            const elemTop = e.offsetTop
-            const elemHeight = e.offsetHeight
-            const elemId = e.id
-            //const elemClass = e.className
-            // console.log(elemId)
-            console.log(pageYOffset);
-            console.log(window.pageYOffset,elemTop,elemTop + elemHeight,elemId)
-    
-            if (window.pageYOffset >= elemTop && window.pageYOffset <= elemTop + elemHeight) {
-                document.querySelector(`a[href*="${elemId}"]`).classList.add("actived");
-            } else {
-                document.querySelector(`a[href*="${elemId}"]`).classList.remove("actived");
-            }
-        });
-        })
-    </script>
 </body>
 </html>

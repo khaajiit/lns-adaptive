@@ -45,15 +45,15 @@ body {
 }
 
 .actived {
-    color: aqua;
+    color: #7D7D7D;
 }
 
 .nav .menu a:hover {
-    color:aqua;
+    color:#7D7D7D;
 }
 
 .nav .menu a:active {
-    color:aqua;
+    color:#7D7D7D;
 }
 
 @media (max-width: 499px) {
