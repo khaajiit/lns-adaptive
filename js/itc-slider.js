@@ -18,7 +18,7 @@ elems.forEach(e => {
         document.querySelector(`a[href*="${elemId}"]`).classList.remove("actived");
     }
 });
-})
+});
 
 
 
