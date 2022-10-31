@@ -1,8 +1,29 @@
+/* h, head */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+.font-head {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* paragraph */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Raleway:ital,wght@1,700&display=swap');
+
+.font-paragraph {
+    font-family: 'Manrope', sans-serif;
+}
+
+
 .welcome h2 {
     text-align: left;
     margin: 40px 20px 20px 20px;
-    max-width: 280px;
-    min-width: 280px;
+    max-width: 250px;
+    min-width: 250px;
+}
+
+.welcome h2 span {
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(158, 0, 0);
 }
 
 .welcome p {
