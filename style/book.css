@@ -4,6 +4,8 @@
 }
 
 .booking__button {
+    position: relative;
+    top: 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,10 +14,19 @@
     height: 50px;
     margin-bottom: 120px;
     border-radius: 20px;
-    background-color: #7D7D7D;
+    background-color: #7C37AE;
     color: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     cursor: pointer;
+}
+
+.booking__button:hover {
+    animation: btn_hover 2s infinite;
+}
+
+@keyframes btn_hover {
+    0%,100% {}
+    50% {transform: scale(1.1);}
 }
 
 .booking__button a {
