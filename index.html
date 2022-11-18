@@ -15,7 +15,7 @@
     <!-- Подключение css и js слайдера -->
     <link rel="stylesheet" href="style/itc-slider.css">
     <script src="js/itc-slider.js" defer></script>
-
+    
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ1QL82CVP"></script>
     <script>
@@ -30,7 +30,9 @@
 <body>
     <div class="header">
         <div class="nav">
-            <div class="logo"><img src="images/logo_negate.png" alt="nail studio belgrade beograde"></div>
+            <div class="logo">
+                <img src="images/logo_negate.png" alt="nail studio belgrade beograde">
+            </div>
             <div class="menu font-head">
                 <a href="#home" class="menu-color">Home</a>
                 <a href="#about" class="menu-color">About</a>
@@ -146,5 +148,19 @@
             </div>
         </div>
     </div>
+
+    <div class="btn-to-top"></div>
+
+    <!-- <script>
+        const changeByScroll = document.querySelector('.btn-to-top');
+
+        window.addEventListener('scroll', () => {
+        console.log(window.pageYOffset)
+        if (window.pageYOffset > 100) {
+            changeByScroll.classList.add('appear')
+            } else changeByScroll.classList.remove('appear')
+        });
+    </script> -->
+    <script src="js/btn_to_top.js"></script>
 </body>
 </html>

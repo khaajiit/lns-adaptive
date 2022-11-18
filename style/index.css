@@ -3,4 +3,5 @@
 @import 'screen_studio.css';
 @import 'screen_services.css';
 @import 'footer.css';
-@import 'book.css?1';
+@import 'book.css';
+@import 'btn_to_top.css';
