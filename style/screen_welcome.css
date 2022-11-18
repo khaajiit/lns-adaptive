@@ -1,46 +1,104 @@
-/* h, head */
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
-
-.font-head {
-    font-family: 'Raleway', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Raleway:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Great+Vibes&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:wght@500&family=Great+Vibes&family=Manrope&display=swap");
+.welcome {
+  display: flex;
+  justify-content: center;
 }
 
-/* paragraph */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Raleway:ital,wght@1,700&display=swap');
-
-.font-paragraph {
-    font-family: 'Manrope', sans-serif;
+.welcome__font-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: auto;
+}
+.welcome__font-block h2 {
+  font-size: 28px;
+  font-family: "Cormorant Garamond", serif;
+  background: linear-gradient(127.56deg, #FFFFFF -106.78%, #000000 86.1%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 40px 0 40px 0;
+}
+.welcome__font-block h2 span {
+  font-size: 75px;
+}
+.welcome__font-block p {
+  max-width: 300px;
+  margin-left: 100px;
+  font-family: "Abel", sans-serif;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
+.welcome__picture-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(192, 192, 192, 0.1);
+  box-shadow: 0px 0px 150px rgb(151, 151, 151);
+  border-radius: 50%;
+}
+.welcome__picture-block .nail__window {
+  background-image: url("https://media.tenor.com/rSyyewwyFscAAAAC/toenails-toe.gif");
+  border-radius: 50%;
+  background-position: center;
+}
 
-.welcome h2 {
-    text-align: left;
-    margin: 40px 20px 20px 20px;
+@media (min-width: 320px) {
+  .welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcome .welcome__picture-block {
+    width: 320px;
+    height: 320px;
+  }
+  .welcome .welcome__picture-block .nail__window {
+    width: 280px;
+    height: 280px;
+  }
+  .welcome .welcome__font-block {
+    padding: auto;
+    margin: 0 10px 0 10px;
+  }
+  .welcome .welcome__font-block p {
+    margin-left: 30px;
+  }
+}
+/* .welcome h2 {
     max-width: 250px;
     min-width: 250px;
-}
-
-.welcome h2 span {
-    font-size: 30px;
-    font-weight: 900;
-    color: rgb(158, 0, 0);
-}
-
-.welcome p {
+    font-size: 28px;
+    background: linear-gradient(127.56deg, #FFFFFF -6.78%, #000000 86.1%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} */
+/* .welcome h2 span {
+    font-size: 75px;
+    font-style: bold;
+} */
+/* .welcome p {
     text-align: left;
     margin: 20px 20px 40px 20px;
-}
-
-.booked {
+} */
+/* .booked {
     width: 200px;
     height: 50px;
     background-color: aqua;
-}
-
-@media (min-width: 768px) {
+} */
+/* @media (min-width: 768px) {
     .welcome {
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        align-items: left;
+
+
         justify-content: center;
     }
 
@@ -52,5 +110,5 @@
         margin: 80px 80px 80px 0;
         min-width: 335px;
         max-width: 450px;
-    }
-}
+    } 
+} *//*# sourceMappingURL=screen_welcome.css.map */

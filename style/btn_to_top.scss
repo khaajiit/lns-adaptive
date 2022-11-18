@@ -1,6 +1,9 @@
 .btn-to-top {
     position: fixed;
     right: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 50px;
     border-radius: 35%;
     width: 50px;
@@ -21,4 +24,4 @@
     .btn-to-top {
         opacity: 0.9;
     }
-  }
+}

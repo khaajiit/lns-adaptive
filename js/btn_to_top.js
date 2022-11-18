@@ -1,12 +1,7 @@
 const btntotop = document.querySelector('.btn-to-top');
 
 btntotop.onclick = function () {
-    // window.scrollTo(0,0);
-    const offsetPosition = window.scrollTo(0,0);
-    window.scrollBy({
-        top: offsetPosition,
-        behavior: 'smooth'
-    });
+    window.scrollTo(0,0);
 }
 
 const scrollMaxY = window.scrollMaxY || (document.documentElement.scrollHeight - document.documentElement.clientHeight)

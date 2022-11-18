@@ -5,6 +5,8 @@
 /* h, head */
 body {
     margin: 0;
+    background-color: rgb(232,232,232);
+    
 }
 
 .nav {
@@ -12,7 +14,7 @@ body {
     align-items: center;
     justify-content: space-around;
     border-bottom: solid 1px #272727;
-    background-color: #000;
+    background-color: rgb(104, 104, 104);
     height: 52px;
 }
 
