@@ -15,6 +15,10 @@
 --button-glow-start: #B000E8;
 --button-glow-end: #009FFD;
 
+.booking {
+    margin-top: 40px;
+}
+
 appearance: none;
 outline: none;
 border: none;
@@ -99,4 +103,7 @@ box-sizing: inherit;
 &:after {
     box-sizing: inherit;
 }
+}
+body {
+    background-color: #09041e;
 }

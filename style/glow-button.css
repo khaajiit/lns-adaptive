@@ -25,6 +25,9 @@
   z-index: 1;
   box-shadow: 0 8px 20px var(--button-shadow);
 }
+.glow-button .booking {
+  margin-top: 40px;
+}
 .glow-button .gradient {
   position: absolute;
   inset: 0;
@@ -92,4 +95,8 @@
 }
 *:before, *:after {
   box-sizing: inherit;
+}
+
+body {
+  background-color: #09041e;
 }/*# sourceMappingURL=glow-button.css.map */

@@ -5,8 +5,7 @@
 /* h, head */
 body {
     margin: 0;
-    background-color: rgb(232,232,232);
-    
+    /* background-color: rgb(232,232,232); */
 }
 
 .nav {
@@ -14,7 +13,8 @@ body {
     align-items: center;
     justify-content: space-around;
     border-bottom: solid 1px #272727;
-    background-color: rgb(104, 104, 104);
+    /* background-color: rgb(104, 104, 104); */
+    background-color: #1d1638;
     height: 52px;
 }
 
@@ -53,15 +53,16 @@ body {
 }
 
 .actived {
-    color: #7D7D7D;
+    color: #7500f3;
 }
 
 .nav .menu a:hover {
-    color:#7D7D7D;
+    /* color:#7D7D7D; */
+    color: #00a6ff;
 }
 
 .nav .menu a:active {
-    color:#7D7D7D;
+    color:#5a34f5;
 }
 
 @media (max-width: 499px) {
