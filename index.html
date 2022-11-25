@@ -8,14 +8,10 @@
     <title>Lina Nails Studio</title>
     <!-- иконка -->
     <link rel="icon" type="image/x-icon" href="images/favicon.png">  
-    <!--Подключаем файлик с js-->
-    <link href="js/javascript.js">
     <!--Подключаем файлик со стилями-->
     <link rel="stylesheet" href="style/index.css">
-    <!-- Подключение css и js слайдера -->
-    <link rel="stylesheet" href="style/itc-slider.css">
-    <script src="js/itc-slider.js" defer></script>
-    
+    <!-- Подключение css слайдера -->
+    <link rel="stylesheet" href="style/itc-slider.css">   
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ1QL82CVP"></script>
     <!-- GOOGLE search -->
@@ -25,6 +21,8 @@
         gtag('js', new Date());
         gtag('config', 'G-RJ1QL82CVP');
     </script>
+    <script src="js/itc-slider.js" type="module"></script><!--Слайдер-->
+    <script src="js/services.js" type="module"></script><!--Услуги-->
     <script src="js/glow-button.js" type="module"></script>
     <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js"></script>
@@ -33,9 +31,9 @@
 <body>
     <div class="header">
         <div class="nav">
-            <div class="logo">
+            <!-- <div class="logo">
                 <img src="images/logo_negate.png" alt="nail studio belgrade beograde">
-            </div>
+            </div> -->
             <div class="menu font-head">
                 <a href="#home" class="menu-color">Home</a>
                 <a href="#about" class="menu-color">About</a>
@@ -50,15 +48,122 @@
             <h2><span>LINA</span><br>NAIL STUDIO</h2>
             <p>Hello, I'm Lina. This is my personal studio of nail in Belgrade. If you want to have beautiful fingers, let's see how it diding.</p>
         </div>
-        <div class="welcome__picture-block">
-            <div class="nail__window"></div>
+    </div>
+
+    <div class="slider screen" data-slider="itc-slider" id="home">
+        <div class="slider__wrapper">
+            <div class="slider__items">
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr1.png" alt="photo one">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr2.png" alt="photo two">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr3.png" alt="photo three">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr4.png" alt="photo four">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr5.png" alt="photo five">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr6.png" alt="photo six">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr7.png" alt="photo seven">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr8.png" alt="photo eight">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr9.png" alt="photo nine">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr10.png" alt="photo ten">
+                </div>
+                <div class="slider__item">
+                    <img src="images/slides_pictures/big/scr11.png" alt="photo eleven">
+                </div>
+            </div>
+        </div>
+        <button class="slider__control" data-slide="prev"></button>
+        <button class="slider__control" data-slide="next"></button>
+    </div>
+
+    <div class="insta" style="color: white">
+        <h3>Also you can explore my instagram</h3>
+        <img src="/images/logo__insta-color.png" alt="logo instagram color">
+    </div>
+
+    <div class="services screen" id="services">
+        <h2>PRICE-LIST</h2>
+        <div class="cards">
+            <div class="card active">
+                <p>Сombined manicure / hardware manicure without cover</p>
+                <p>Price 1700 RSD</p>
+            </div>
+            <div class="card">
+                <p>Сombined manicure / hardware manicure coated monochrome</p>
+                <p>Price 2000 RSD</p>
+            </div>
+            <div class="card">
+                <p>Repair / rebuilding 1 nail</p>
+                <p>Price 300 RSD</p>
+            </div>
+            <div class="card">
+                <p>Gel strengthening</p>
+                <p>Price 700 RSD</p>
+            </div>
+            <div class="card">
+                <p>Removal without coating and manicure</p>
+                <p>Price 500 RSD</p>
+            </div>
+            <div class="card">
+                <p>Male manicure without coating</p>
+                <p>Price 2000 RSD</p>
+            </div>
+            <div class="card">
+                <p>Design on request (negotiated in advance)</p>
+                <p>Price From 100 to 1000 RSD</p>
+            </div>
         </div>
     </div>
 
     <div class="booking">
         <button class="glow-button">
-            <span>Button</span>
+            <span>Click me to book</span>
         </button>
+    </div>
+
+    <div class="studio">
+        <div class="studio__image">
+            <img src="images/studio/IMG20220622185114.png" alt="studio photo">
+        </div>
+    </div>
+
+    <div class="footer screen" id="contacts">
+        <div class="footer__info">
+            <h3 class="font-head">CONTACT INFO</h3>
+            <p class="font-paragraph">For booking you can write me to the direct instagram or telegram</p>
+            <div class="footer__info-logos">
+                <img src="/images/logo__insta-color.png" alt="logo instagram color">
+                <img src="/images/logo_telegram-color.png" alt="logo telegram color">
+            </div>
+        </div>
+        <div class="footer__instagram">
+            <div class="insta_photos">
+                <a href="https://www.instagram.com/lns_nail/">
+                    <img src="images/insta_photos/Screenshot_1.png" alt="Instagram photo 1">
+                    <img src="images/insta_photos/Screenshot_2.png" alt="Instagram photo 2">
+                    <img src="images/insta_photos/Screenshot_3.png" alt="Instagram photo 3">
+                    <img src="images/insta_photos/Screenshot_4.png" alt="Instagram photo 4">
+                    <img src="images/insta_photos/Screenshot_5.png" alt="Instagram photo 5">
+                    <img src="images/insta_photos/Screenshot_6.png" alt="Instagram photo 6">
+                </a>
+            </div>
+        </div>
     </div>
 
 
@@ -74,99 +179,7 @@
         </div>
     </div> -->
 
-
-    <!-- <div class="slider screen" data-slider="itc-slider" id="home">
-        <div class="slider__wrapper">
-            <div class="slider__items">
-                <div class="slider__item">
-                    <img src="images/slides_pictures/small/Screenshot_1.png" alt="photo one">
-                </div>
-                <div class="slider__item">
-                    <img src="images/slides_pictures/small/Screenshot_2.png" alt="photo two">
-                </div>
-                <div class="slider__item">
-                    <img src="images/slides_pictures/small/Screenshot_3.png" alt="photo three">
-                </div>
-                <div class="slider__item">
-                    <img src="images/slides_pictures/small/Screenshot_4.png" alt="photo four">
-                </div>
-            </div>
-        </div>
-        <button class="slider__control" data-slide="prev"></button>
-        <button class="slider__control" data-slide="next"></button>
-    </div>
-
-    <div class="studio">
-        <div class="studio__image">
-            <img src="images/studio/IMG20220622185114.png" alt="studio photo">
-        </div>
-    </div>
-
-    <div class="services screen" id="services">
-        <h2 class="font-head">PRICE-LIST</h2>
-        <div class="container__services">
-            <table class="resp-tab">
-                <thead>
-                    <tr>
-                        <th>Name of service</th>
-                        <th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><span>Name of service</span>Сombined manicure / hardware manicure without cover</td>
-                        <td><span>Price</span>1700 RSD</td>
-                    </tr>     
-                    <tr>
-                        <td><span>Name of service</span>Сombined manicure / hardware manicure coated monochrome</td>
-                        <td><span>Price</span>2000 RSD</td>
-                    </tr>
-                    <tr>
-                        <td><span>Name of service</span>Repair / rebuilding 1 nail</td>
-                        <td><span>Price</span>300 RSD</td>
-                    </tr>
-                    <tr>
-                        <td><span>Name of service</span>Gel strengthening</td>
-                        <td><span>Price</span>700 RSD</td>
-                    </tr>
-                    <tr>
-                        <td><span>Name of service</span>Removal without coating and manicure</td>
-                        <td><span>Price</span>500 RSD</td>
-                    </tr>
-                    <tr>
-                        <td><span>Name of service</span>Male manicure without coating</td>
-                        <td><span>Price</span>2000 RSD</td>
-                    </tr>
-                    <tr>
-                        <td><span>Name of service</span>Design on request (negotiated in advance)</td>
-                        <td><span>Price</span>From 100 to 1000 RSD</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-    <div class="footer screen" id="contacts">
-        <div class="footer__info">
-            <h3 class="font-head">CONTACT INFO</h3>
-            <p class="font-paragraph">You can write to Telegram or instagram in direct to record and specify the time. The studio is located in Novi Beograd, block 63. To clarify the exact address, use the "Book now" button</p>
-        </div>
-        <div class="footer__instagram">
-            <h3 class="font-head">OUR INSTAGRAM</h3>
-            <div class="insta_photos">
-                    <a href="https://www.instagram.com/lns_nail/">
-                        <img src="images/insta_photos/Screenshot_1.png" alt="Instagram photo 1">
-                        <img src="images/insta_photos/Screenshot_2.png" alt="Instagram photo 2">
-                        <img src="images/insta_photos/Screenshot_3.png" alt="Instagram photo 3">
-                        <img src="images/insta_photos/Screenshot_4.png" alt="Instagram photo 4">
-                        <img src="images/insta_photos/Screenshot_5.png" alt="Instagram photo 5">
-                        <img src="images/insta_photos/Screenshot_6.png" alt="Instagram photo 6">
-                    </a>
-            </div>
-        </div>
-    </div>
-
-    <div class="btn-to-top">
+    <!-- <div class="btn-to-top">
         <div class="arrow__btn-to-top">        
             <svg width="11" height="13" viewBox="0 0 11 13" fill="white" transform="rotate(-90)" xmlns="http://www.w3.org/2000/svg">
             <path d="M1.525 12.2226C1.19167 12.4393 0.854 12.4516 0.512 12.2596C0.170667 12.0683 0 11.7726 0 11.3726V1.02259C0 0.62259 0.170667 0.32659 0.512 0.13459C0.854 -0.0567435 1.19167 -0.0440767 1.525 0.17259L9.675 5.34759C9.975 5.54759 10.125 5.83092 10.125 6.19759C10.125 6.56426 9.975 6.84759 9.675 7.04759L1.525 12.2226Z" fill="white"/></div>
@@ -183,5 +196,6 @@
         });
     </script> -->
     <!-- <script src="js/btn_to_top.js"></script> -->
+    
 </body>
 </html>

@@ -3,6 +3,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:wght@500&family=Great+Vibes&family=Manrope&display=swap');
 
+/* the last */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body {
+    background-color: black;
+}
+
 .welcome {
     display: flex;
     justify-content: center;
@@ -17,9 +24,8 @@
 
     h2 {
         font-size: 28px;
-        font-family: 'Cormorant Garamond', serif;
-        // font-family: 'Raleway', sans-serif;
-        background: linear-gradient(127.56deg, #FFFFFF -106.78%, #000000 86.1%);
+        font-family: 'Audiowide', cursive;
+        background: linear-gradient(127.56deg, #FFFFFF -6.78%, #000000 150.1%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin: 40px 0 40px 0;
@@ -36,6 +42,7 @@
         // font-family: 'Manrope', sans-serif;
         margin: 0;
         margin-bottom: 40px;
+        color: white;
     }
 }
 
@@ -74,32 +81,32 @@
     }
 }
 
-@media (min-width: 320px) {
-    .welcome {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+// @media (min-width: 320px) {
+//     .welcome {
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
 
-        .welcome__picture-block {
-            width: 320px;
-            height: 320px; 
+//         .welcome__picture-block {
+//             width: 320px;
+//             height: 320px; 
             
-            .nail__window {
-                width: 280px;
-                height: 280px;
-            }
-        }
+//             .nail__window {
+//                 width: 280px;
+//                 height: 280px;
+//             }
+//         }
 
-        .welcome__font-block {
-            padding: auto;
-            margin: 0 10px 0 10px;
+//         .welcome__font-block {
+//             padding: auto;
+//             margin: 0 10px 0 10px;
     
-            p {
-                margin-left: 30px;
-            }
-        }
-    }
-}
+//             p {
+//                 margin-left: 30px;
+//             }
+//         }
+//     }
+// }
 
 
 // @media (max-width: 768px) {

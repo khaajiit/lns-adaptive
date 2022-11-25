@@ -1,91 +1,59 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* h, head */
 body {
-    margin: 0;
-    /* background-color: rgb(232,232,232); */
+  margin: 0;
 }
 
 .nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-bottom: solid 1px #272727;
-    /* background-color: rgb(104, 104, 104); */
-    background-color: #1d1638;
-    height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 1px rgba(128, 128, 128, 0.642);
+  background-color: black;
+  height: 50px;
 }
-
-.nav .logo {
-    position: absolute;
-    left: 1%;
-    opacity: 1;
-    margin-left: 5%;
-    color: white;
-}
-
-.logo img {
-    width: 50px;
-    height: 50px;
-}
-
 .nav .menu {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    max-width: 400px;
-    gap: 0px 5px;
-    padding: 0 0;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 400px;
+  gap: 0px 5px;
+  padding: 0 30px;
 }
-
 .nav .menu a {
-    list-style-type: none;
-    cursor: pointer;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-in-out;
+  text-decoration: none;
+  color: hsl(0deg, 0%, 80%);
+  cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
 }
-
-.menu-color {
-    color: white;
-    text-decoration: none;
-}
-
-.actived {
-    color: #7500f3;
-}
-
 .nav .menu a:hover {
-    /* color:#7D7D7D; */
-    color: #00a6ff;
+  color: gray;
 }
-
 .nav .menu a:active {
-    color:#5a34f5;
+  color: rgba(117, 0, 243, 0.631372549);
 }
 
 @media (max-width: 499px) {
-    .nav .menu a:nth-child(1) {
-        display: none;
-    }
-
-    .nav .logo {
-        display: none;
-    }
+  .nav .menu a:nth-child(1) {
+    display: none;
+  }
+  .nav .logo {
+    display: none;
+  }
 }
-
 @media (max-width: 600px) {
-    .nav .logo {
-        margin-left: 0;
-    }
+  .nav .logo {
+    margin-left: 0;
+  }
 }
-
 @media (min-width: 500px) {
-    .nav {
-        z-index: 99;
-        position: fixed;
-        top: 0;
-        width: 100%;
-    }
-}
+  .nav {
+    z-index: 99;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}/*# sourceMappingURL=nav.css.map */

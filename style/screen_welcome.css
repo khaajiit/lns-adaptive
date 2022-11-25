@@ -2,10 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&family=Raleway:ital,wght@1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Great+Vibes&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abel&family=Cormorant+Garamond:wght@500&family=Great+Vibes&family=Manrope&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
-
 /* the last */
-@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
+body {
+  background-color: black;
+}
 
 .welcome {
   display: flex;
@@ -20,18 +21,16 @@
   height: auto;
 }
 .welcome__font-block h2 {
-  margin: 80px 0 40px 0;
+  font-size: 28px;
+  font-family: "Audiowide", cursive;
   background: linear-gradient(127.56deg, #FFFFFF -6.78%, #000000 150.1%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 28px;
-  font-family: 'Audiowide', cursive;
+  margin: 40px 0 40px 0;
 }
-
 .welcome__font-block h2 span {
   font-size: 75px;
 }
-
 .welcome__font-block p {
   max-width: 300px;
   margin-left: 100px;
@@ -57,28 +56,6 @@
   background-position: center;
 }
 
-@media (min-width: 320px) {
-  .welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .welcome .welcome__picture-block {
-    width: 320px;
-    height: 320px;
-  }
-  .welcome .welcome__picture-block .nail__window {
-    width: 280px;
-    height: 280px;
-  }
-  .welcome .welcome__font-block {
-    padding: auto;
-    margin: 0 10px 0 10px;
-  }
-  .welcome .welcome__font-block p {
-    margin-left: 30px;
-  }
-}
 /* .welcome h2 {
     max-width: 250px;
     min-width: 250px;

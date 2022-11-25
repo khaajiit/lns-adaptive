@@ -1,91 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .services h2 {
-    text-align: center;
+  color: white;
+  font-family: "Abel", sans-serif;
 }
 
-.resp-tab {
-    border-radius: 5px;
-    font-weight: normal;
-    border: none;
-    border-collapse: collapse;
-    width: 100%;
-    max-width: 100%;
-}
-.resp-tab th, .resp-tab td {
-    padding: 10px 20px;
-    font-size: 13px;
-    border: none;
-    font-family: Verdana, sans-serif;   
-    border: 1px solid #323232;
-    vertical-align: top;
-}
-.resp-tab th {
-    color: #FFF;
-    background: #323232;
-    font-weight: bold;
-    border: 1px solid #272727;   
-    text-transform: uppercase;   
-    text-align: center;   
-}
-.resp-tab tr:nth-child(even) {
-    background: #C1C1C1;
-}
-.resp-tab td span {
-    background: #323232;
-    color: #FFF;
-    display: none;
-    font-size: 11px;
-    font-weight: bold;
-    font-family: Verdana, sans-serif;   
-    text-transform: uppercase;       
-    padding: 5px 10px;
-    position: absolute;
-    top: 0;
-    left: 0;   
+.cards {
+  display: flex;
+  flex-direction: column;
 }
 
-@media(max-width: 768px) {
-
+.card {
+  width: 300px;
+  height: 45px;
+  background: white;
+  transition: 0.5s ease;
+  margin: 0 0 20px 0;
 }
-
-@media(max-width: 768px) {
-    .resp-tab thead {
-        display: none;
-    }
-    .resp-tab tr {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-    }
-    .resp-tab td {
-        margin: 0 -1px -1px 0;
-        padding-top: 35px;
-        position: relative;
-        width: 50%;
-    }
-    .resp-tab td span {
-        display: block;
-    }
+.card.active {
+  height: 300px;
+  background: red;
 }
-/* Мои правки над текстом мобильной версии */
-@media(max-width: 480px) {
-    .resp-tab tbody tr td span {
-        display: none;
-    }
-
-    .resp-tab tbody tr td {
-        padding: 10px;
-    }
-}
-
-@media(max-width: 480px) {
-    .resp-tab td {
-        width: 100%;
-    }
-}
-
-@media(min-width: 768px) {
-    .services {
-        margin: 40px;
-    }
-}
+.card p {
+  text-align: center;
+  margin-top: 5px;
+  min-width: 36px;
+  font-weight: 500;
+  font-family: "Abel", sans-serif;
+}/*# sourceMappingURL=screen_services.css.map */
