@@ -5,7 +5,11 @@
 /* the last */
 @import url("https://fonts.googleapis.com/css2?family=Audiowide&display=swap");
 body {
-  background-color: black;
+  background-image: url("../images/bg/bg_wood5.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
 }
 
 .welcome {
