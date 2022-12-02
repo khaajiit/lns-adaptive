@@ -60,6 +60,11 @@ body {
   background-position: center;
 }
 
+@media (min-width: 500px) {
+  .welcome__font-block {
+    padding-top: 51px;
+  }
+}
 /* .welcome h2 {
     max-width: 250px;
     min-width: 250px;

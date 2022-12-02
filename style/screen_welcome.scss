@@ -87,6 +87,12 @@ body {
     }
 }
 
+@media (min-width: 500px) {
+    .welcome__font-block {
+        padding-top: 51px;
+    }
+}
+
 // @media (min-width: 320px) {
 //     .welcome {
 //         display: flex;

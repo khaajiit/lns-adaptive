@@ -145,3 +145,24 @@
     height: 200px;
   }
 }
+
+@media (min-width: 768px) {
+  .slider {
+    display: flex;
+    justify-content: center;
+  }
+
+  .slider__wrapper {
+    width: 80%;
+  }
+
+  .slider__item img{
+    object-fit: cover;
+    height: 480px;
+  }
+
+  /* .slider__item {
+    height: 50%;
+  } */
+  
+}
