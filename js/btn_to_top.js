@@ -10,15 +10,8 @@ const scrollMaxY = window.scrollMaxY || (document.documentElement.scrollHeight -
 const changeByScroll = document.querySelector('.btn-to-top');
 
 window.addEventListener('scroll', () => {
-    console.log(window.pageYOffset)
+    console.log(window.pageYOffset);
     if (window.pageYOffset > scrollMaxY*0.5) {
         changeByScroll.classList.add('appear_btn-to-top')
     } else changeByScroll.classList.remove('appear_btn-to-top')
 });
-
-// button home
-const btnToHome = document.querySelector('.btn-to-home');
-
-btnToHome.onclick = function () {
-    window.scrollTo(0,0);
-}

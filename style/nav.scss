@@ -33,12 +33,16 @@ body {
             font-family: "Abel", sans-serif;
 
             &:hover {
-                color: gray;
+                color: white;
             }
 
-            &:active {
+            &:actived {
                 color: #7500f3a1;
             }
+        }
+
+        .actived {
+            color: white;
         }
     }
 }

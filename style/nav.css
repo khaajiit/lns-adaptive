@@ -31,10 +31,13 @@ body {
   font-family: "Abel", sans-serif;
 }
 .nav .menu a:hover {
-  color: gray;
+  color: white;
 }
-.nav .menu a:active {
+.nav .menu a:actived {
   color: rgba(117, 0, 243, 0.631372549);
+}
+.nav .menu .actived {
+  color: white;
 }
 
 @media (max-width: 499px) {
