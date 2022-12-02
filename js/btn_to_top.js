@@ -1,6 +1,7 @@
-const btntotop = document.querySelector('.btn-to-top');
+// button наверх
+const btnToTop = document.querySelector('.btn-to-top');
 
-btntotop.onclick = function () {
+btnToTop.onclick = function () {
     window.scrollTo(0,0);
 }
 
@@ -14,3 +15,10 @@ window.addEventListener('scroll', () => {
         changeByScroll.classList.add('appear_btn-to-top')
     } else changeByScroll.classList.remove('appear_btn-to-top')
 });
+
+// button home
+const btnToHome = document.querySelector('.btn-to-home');
+
+btnToHome.onclick = function () {
+    window.scrollTo(0,0);
+}
