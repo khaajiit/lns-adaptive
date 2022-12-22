@@ -98,9 +98,9 @@ to {
 }
 
 * {
-box-sizing: inherit;
-&:before,
-&:after {
     box-sizing: inherit;
-}
+    &:before,
+    &:after {
+        box-sizing: inherit;
+    }
 }
