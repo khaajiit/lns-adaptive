@@ -3,21 +3,21 @@ window.addEventListener('scroll', () => {
 const elems = document.querySelectorAll('.screen')
 
 elems.forEach(e => {
-    //const link = document.querySelector('a[href*="welcome"]')
-    const elemTop = e.offsetTop
-    const elemHeight = e.offsetHeight
-    const elemId = e.id
-    //const elemClass = e.className
-    // console.log(elemId)
-    // console.log(pageYOffset);
-    // console.log(window.pageYOffset,elemTop,elemTop + elemHeight,elemId)
+      //const link = document.querySelector('a[href*="welcome"]')
+      const elemTop = e.offsetTop
+      const elemHeight = e.offsetHeight
+      const elemId = e.id
+      //const elemClass = e.className
+      // console.log(elemId)
+      // console.log(pageYOffset);
+      // console.log(window.pageYOffset,elemTop,elemTop + elemHeight,elemId)
 
-    if (window.pageYOffset >= elemTop && window.pageYOffset <= elemTop + elemHeight) {
-        document.querySelector(`a[href*="${elemId}"]`).classList.add("actived");
-    } else {
-        document.querySelector(`a[href*="${elemId}"]`).classList.remove("actived");
-    }
-});
+      if (window.pageYOffset >= elemTop && window.pageYOffset <= elemTop + elemHeight) {
+          document.querySelector(`a[href*="${elemId}"]`).classList.add("actived");
+      } else {
+          document.querySelector(`a[href*="${elemId}"]`).classList.remove("actived");
+      }
+  });
 });
 
 
