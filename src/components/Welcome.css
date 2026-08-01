@@ -1,0 +1,30 @@
+.welcome {
+  padding: 48px 24px;
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcome h2 {
+  font-size: 1.6rem;
+  margin: 0 0 20px;
+}
+
+.welcome h2 span {
+  color: var(--color-accent);
+}
+
+.welcome p {
+  color: #333;
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .welcome {
+    padding: 96px 24px;
+  }
+
+  .welcome h2 {
+    font-size: 2.2rem;
+  }
+}

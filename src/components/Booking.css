@@ -1,0 +1,29 @@
+.booking {
+  display: flex;
+  justify-content: center;
+  padding: 0 24px 48px;
+}
+
+.booking__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  height: 52px;
+  padding: 0 32px;
+  border-radius: 26px;
+  background: var(--color-accent);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-head);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 20px rgba(180, 138, 74, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.booking__button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(180, 138, 74, 0.45);
+}
